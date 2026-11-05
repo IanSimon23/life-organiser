@@ -2,7 +2,7 @@
 
 **What this is:** a safe way to keep everything your family would need if you died or became unable to manage your affairs. It covers accounts, passwords, policies, contacts and wishes, and it is kept up to date and protected from thieves.
 
-**What it costs:** nothing apart from two tamper-evident security bags (£5-10). You might also choose to pay a solicitor to store an envelope, or rent a bank safe deposit box (see Step 6).
+**What it costs:** nothing apart from two tamper-evident security bags (£5-10). You might also choose to pay a solicitor to store an envelope, or rent a bank safe deposit box (see Step 2).
 
 **Time to set up:** about two hours, once. After that, about 20 minutes twice a year.
 
@@ -36,7 +36,84 @@ The Vault is stored in Proton Drive (encrypted, so safe even if Proton were comp
 
 ---
 
-## Step 1: Create your master password
+## About security and your choices
+
+This guide recommends best practices for security: two envelopes in different locations, tamper-evident bags, full-disk encryption, and so on. **Following all the recommendations gives you the strongest protection.**
+
+However, we recognize that everyone has their own circumstances, risk appetite, and level of trust in the people around them. Some people might prefer simplicity over maximum security. That's your choice to make.
+
+**Throughout this guide we'll:**
+- Point out the risks of each shortcut or simpler option
+- Explain what could go wrong if you skip a security measure
+- Let you make informed decisions based on your own situation
+
+**Examples of choices you might make:**
+- **One envelope vs two:** One envelope is simpler and cheaper, but if it's lost or destroyed, everything is permanently locked. Two envelopes add redundancy but cost more and require organizing two storage locations.
+- **Paper envelope vs security bag:** A paper envelope is fine if you trust the storage location completely. Security bags (£5-10) show clear evidence of tampering but add a small cost.
+- **Full-disk encryption:** Essential if your laptop might be stolen or accessed by others. Less critical if it never leaves a secure home and you live alone.
+- **Sharing Proton access:** Convenient for a trusted spouse but creates risk if the relationship changes. Keeping it in the envelopes only is more secure but less convenient.
+
+**Our recommendation:** If you're unsure, follow all the steps as written. You can always simplify later once you understand the trade-offs. It's harder to add security after the fact than to start with it.
+
+---
+
+## Step 1: Secure your computer
+
+Do this step FIRST, before creating any passwords or setting up the vault. There's no point in creating a secure system on an insecure computer.
+
+The Vault file on your computer is encrypted, but only if you type the master password correctly. If someone steals your laptop or malware gets on it, they could try to access the Vault or capture your master password as you type it.
+
+**Enable full-disk encryption (strongly recommended):**
+- **Windows:** Turn on **BitLocker**. Search for "BitLocker" in Settings → System → Storage → Advanced storage settings → Disk Management. Follow the setup wizard. Write down your recovery key and store it with your executor (not in the Envelopes).
+- **Mac:** Turn on **FileVault**. Go to System Settings → Privacy & Security → FileVault. Write down your recovery key and store it with your executor (not in the Envelopes).
+
+This encrypts your entire hard drive. If your laptop is stolen, no one can read any files without your login password.
+
+**⚠️ Risk of skipping this:** If your laptop is stolen without full-disk encryption, someone with technical skills could remove your hard drive, read the Vault file, and try to crack the master password. With a strong master password this would take years, but it's still a risk.
+
+**Other essential protections:**
+- [ ] Use reputable antivirus/anti-malware software and keep it updated (Windows Defender is fine on Windows; macOS has built-in protection)
+- [ ] Never type your master password on public computers or computers you don't own
+- [ ] Only access Proton Drive on secure WiFi networks (your home network or known trusted networks, never public WiFi)
+- [ ] Run a malware scan before opening your Vault if you suspect your computer might be infected
+- [ ] Keep your operating system and all software updated (enable automatic updates)
+
+> If your computer is old and no longer receives security updates, consider replacing it before setting up the Life Organiser. An unsupported operating system is vulnerable to attacks.
+
+---
+
+## Step 2: Get your physical security items ready
+
+Before you create any passwords, gather what you'll need for physical security and decide where things will be stored.
+
+**What to get:**
+- [ ] Two **tamper-evident security bags** (search Amazon/office suppliers for "tamper evident bags" or "cash deposit bags", £5-10 for a pack)
+  - **⚠️ Simpler option:** Use regular paper envelopes instead (free). Risk: paper envelopes can be steamed open and resealed invisibly. Security bags show clear evidence of tampering.
+- [ ] Pen and paper for writing envelope contents
+- [ ] A printer (you'll need to print the Overview later)
+
+**Decide where to store your two envelopes** (you don't need to arrange this yet, just decide):
+
+**Envelope 1 (primary):**
+- With your solicitor (stored with your will) - most secure, executor goes there anyway
+- Bank safe deposit box - very secure but annual fee (£50-150)
+- In a fireproof safe at home (must be bolted down) - Cost of safe (£100-300)
+
+**Envelope 2 (backup):**
+- Must be in a **different physical location** from Envelope 1
+- Options: different solicitor, with a trusted family member/friend (in their safe), bank safe deposit box, professional document storage
+
+**⚠️ Simpler option:** Use only one envelope instead of two. Risk: if that envelope is lost, destroyed, or the storage location becomes inaccessible, everything is permanently locked. No recovery is possible.
+
+**Questions to ask your solicitor (if using one):**
+- "How is my envelope stored? In a safe or filing cabinet?"
+- "Who has access to it?"
+- "What happens if your firm merges or closes?"
+- "Is there a fee for storage?"
+
+---
+
+## Step 3: Create your master password
 
 This is the only password you'll ever need to remember for this system, so it must be strong and memorable. Use **five to seven random words**.
 
@@ -58,9 +135,9 @@ This method guarantees true randomness and uses a community-audited 7,776-word l
 For convenience, visit the [Password Generator](/password-generator) on this site. It uses the same EFF wordlist and your browser's cryptographically secure random number generator. Choose 5-7 words and your preferred separator, then click Generate.
 
 **Do:**
-- **Go IMMEDIATELY to Step 6** (prepare the envelopes) and write it down there
+- **Go IMMEDIATELY to Step 7** (fill and seal the envelopes) and write it down there
 - Practise typing it a few times to memorize it
-- If you must write it down now, use a sheet that will become one of your envelopes in Step 6
+- If you must write it down now, use a sheet that will become one of your envelope contents in Step 7
 
 **Don't:**
 - Use names, birthdays, addresses, song lyrics or quotes
@@ -68,20 +145,20 @@ For convenience, visit the [Password Generator](/password-generator) on this sit
 - Save it in your email, phone notes or a document on your computer
 - Write it on scrap paper and carry it around
 
-> ⚠️ **There is no "forgot password" button.** If the master password is lost and both Envelopes are lost, the Vault can never be opened by anyone, including you. That's what makes it secure, and it's why Step 6 matters.
+> ⚠️ **There is no "forgot password" button.** If the master password is lost and both Envelopes are lost, the Vault can never be opened by anyone, including you. That's what makes it secure, and it's why Step 7 matters.
 
-> ⚠️ **IMPORTANT:** Complete Steps 1-6 in one sitting. Don't create a password and leave it written on paper while you do other steps.
+> ⚠️ **IMPORTANT:** Complete Steps 3-7 in one sitting. Don't create a password and leave it written on paper while you do other steps.
 
 ---
 
-## Step 2: Create the Vault
+## Step 4: Create the Vault
 
 1. Go to [**keepassxc.org**](https://keepassxc.org), download it for your computer and install it. Only download it from this site.
 2. Open KeePassXC and click **Create new database**.
 3. Name it `Life Organiser Vault`. Click **Continue**.
 4. Leave the encryption settings as they are. Click **Continue**.
-5. Enter your master password from Step 1, twice. Click **Done**.
-6. When asked where to save it, choose your **Documents** folder for now. (You'll move it in Step 4.)
+5. Enter your master password from Step 3, twice. Click **Done**.
+6. When asked where to save it, choose your **Documents** folder for now. (You'll move it in Step 6.)
 
 Inside the Vault, create these groups (right-click → **New Group**). You'll fill them in later.
 
@@ -97,50 +174,61 @@ Close KeePassXC and open it again to check the password works.
 
 ---
 
-## Step 3: Set up your secure online storage
+## Step 5: Set up your secure online storage
 
 This keeps an up-to-date copy of the Vault somewhere safe, so a house fire or a dead laptop doesn't lose everything.
 
 1. Go to [**proton.me/drive**](https://proton.me/drive) and create a free account. Use the five-word method for its password too, with **different words** from your master password.
 2. **Turn on two-step login.** In Proton go to **Settings → Account and password → Two-factor authentication**. Scan the code with your authenticator app.
-3. Proton will show you **backup codes**. Write them down. They go in the Envelope.
-4. Proton will also offer a **recovery phrase** (a list of words). Write it down. It also goes in the Envelope.
+3. Proton will show you **backup codes**. Write them down. They go in the Envelopes.
+4. Proton will also offer a **recovery phrase** (a list of words). Write it down. It also goes in the Envelopes.
 5. Install the **Proton Drive app** on your computer and sign in. A Proton Drive folder will appear, like any other folder, and anything put in it is copied safely online.
 
 ---
 
-## Step 4: Put the Vault in Proton Drive
+## Step 6: Put the Vault in Proton Drive
 
 1. Inside the Proton Drive folder, create a folder called `Life Organiser`.
 2. Move the `Life Organiser Vault` file from Documents into it.
 3. From now on, always open the Vault from this folder. Every change you make is then backed up automatically.
 
-> You'll also keep your Overview document in this `Life Organiser` folder (Step 5).
+> You'll also keep your Overview document in this `Life Organiser` folder (Step 8).
 
 ---
 
-## Step 4A: Secure your computer
+## Step 7: Fill and seal the Envelopes
 
-The Vault file on your computer is encrypted, but only if you type the master password correctly. If someone steals your laptop or malware gets on it, they could try to access the Vault or capture your master password as you type it.
+Now that you've created your master password (Step 3) and set up Proton (Step 5), you can fill the envelopes you prepared in Step 2.
 
-**Enable full-disk encryption (mandatory):**
-- **Windows:** Turn on **BitLocker**. Search for "BitLocker" in Settings → System → Storage → Advanced storage settings → Disk Management. Follow the setup wizard. Write down your recovery key and store it with your executor (not in the Envelope).
-- **Mac:** Turn on **FileVault**. Go to System Settings → Privacy & Security → FileVault. Write down your recovery key and store it with your executor (not in the Envelope).
+**What to write (make two identical copies on two sheets of paper):**
 
-This encrypts your entire hard drive. If your laptop is stolen, no one can read any files without your login password.
+- [ ] The **Vault master password** (Step 3)
+- [ ] Your **Proton email address and password** (Step 5)
+- [ ] Your **Proton backup codes** (Step 5)
+- [ ] Your **Proton recovery phrase** (Step 5)
+- [ ] Your **phone passcode** (your authenticator app is on your phone)
+- [ ] One line: *"The Vault is in Proton Drive in the Life Organiser folder. Download it and open it with KeePassXC from [keepassxc.org](https://keepassxc.org)."*
 
-**Other essential protections:**
-- [ ] Use reputable antivirus/anti-malware software and keep it updated (Windows Defender is fine on Windows; macOS has built-in protection)
-- [ ] Never type your master password on public computers or computers you don't own
-- [ ] Only access Proton Drive on secure WiFi networks (your home network or known trusted networks, never public WiFi)
-- [ ] Run a malware scan before opening your Vault if you suspect your computer might be infected
-- [ ] Keep your operating system and all software updated (enable automatic updates)
+**Seal them securely:**
 
-> If your computer is old and no longer receives security updates, consider replacing it before setting up the Life Organiser. An unsupported operating system is vulnerable to attacks.
+1. Put each sheet into a **tamper-evident security bag** (or paper envelope if you chose the simpler option).
+2. Seal each bag and sign and date across the seal.
+3. Write on the front: **"To be opened in case of my death or incapacity by [executor's name] or holders of my Power of Attorney"**
+
+**Store them in the locations you decided in Step 2:**
+- Take Envelope 1 to its primary storage location (solicitor/bank/safe)
+- Store Envelope 2 in the different backup location you chose
+
+**CRITICAL RULES:**
+- The two envelopes must be in **different physical locations**
+- Tell your executor **where both envelopes are stored** (you'll write this in the Overview in Step 8)
+- If you store one with a trusted person, tell them: "Only open this if I die or become incapacitated, OR if the primary envelope is lost or destroyed"
+
+Now **destroy any scrap paper** with passwords on it, and check your computer's Recycle Bin/Bin is empty.
 
 ---
 
-## Step 5: Create the Overview
+## Step 8: Create the Overview
 
 This is the "front page": the first thing your executor reads. **It must contain no passwords, PINs or account numbers.** Write what exists and who to call, not how to get in.
 
@@ -158,59 +246,7 @@ This is the "front page": the first thing your executor reads. **It must contain
 
 ---
 
-## Step 6: Prepare the Envelopes
-
-This is the most important step. You'll create **two identical envelopes** and store them in **different locations**. This protects against loss, damage or inaccessibility of either location.
-
-**What to write (make two identical copies):**
-
-On two sheets of paper, write clearly:
-
-- [ ] The **Vault master password** (Step 1)
-- [ ] Your **Proton email address and password** (Step 3)
-- [ ] Your **Proton backup codes** (Step 3)
-- [ ] Your **Proton recovery phrase** (Step 3)
-- [ ] Your **phone passcode** (your authenticator app is on your phone)
-- [ ] One line: *"The Vault is in Proton Drive in the Life Organiser folder. Download it and open it with KeePassXC from [keepassxc.org](https://keepassxc.org)."*
-
-**Seal them securely:**
-
-1. Put each sheet into a **tamper-evident security bag** (the ones you bought in "What you'll need"). These are far more secure than paper envelopes—they show clear evidence if opened.
-2. Seal each bag and sign and date across the seal.
-3. Write on the front: **"To be opened in case of my death or incapacity by [executor's name] or holders of my Power of Attorney"**
-
-> Why tamper-evident bags? Paper envelopes can be steamed open and resealed invisibly. Security bags (used by banks and police) show unmistakable evidence of tampering. Available cheaply from Amazon or office suppliers.
-
-**Where to store them (choose two different locations):**
-
-**Envelope 1 (primary):**
-
-| Option | Cost | Notes |
-|---|---|---|
-| **With your solicitor**, stored with your will | Small fee, sometimes free if they hold your will | Ask: "How is this stored—in a safe or filing cabinet? Who has access? What happens if your firm merges or closes?" |
-| **Bank safe deposit box** | Annual fee (£50-150) | Very secure, but executor needs documentation to access after death |
-| **In a fireproof safe at home** | Cost of safe (£100-300) | Must be bolted down. Tell your executor the combination or key location. |
-
-**Envelope 2 (backup):**
-
-Store the second envelope in a **different location** from the first. Good options:
-
-- With a different solicitor (if you use multiple for different purposes)
-- With a highly trusted family member or friend who is **not** your executor (in their safe or with their solicitor)
-- In a bank safe deposit box (if Envelope 1 is with a solicitor)
-- With a professional document storage service
-
-**CRITICAL RULES:**
-- The two envelopes must be in **different physical locations**—different buildings, different towns if possible
-- Tell your executor **where both envelopes are stored** (write this in the Overview)
-- If you store one with a trusted person, tell them: "Only open this if I die or become incapacitated, OR if the primary envelope (at [location]) is lost or destroyed"
-- **Never** store either envelope in the same place as the Document Box (the printed Overview should be with your executor, not in either envelope location)
-
-Now **destroy the scrap paper** you've been carrying since Step 1, and check your computer's Recycle Bin/Bin is empty.
-
----
-
-## Step 7: Brief your executor
+## Step 9: Brief your executor
 
 Give your executor **the printed Overview** and have this conversation:
 
@@ -247,7 +283,7 @@ If you share Proton access with someone now:
 
 ---
 
-## Step 8: Fill it in and keep it up to date
+## Step 10: Fill it in and keep it up to date
 
 The system is now built but empty. Filling it in for the first time, scanning your documents, storing the originals and the six-monthly review are all covered in the second guide, **Filling It In and Keeping It Current**.
 
