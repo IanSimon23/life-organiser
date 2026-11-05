@@ -113,9 +113,9 @@ Before you create any passwords, gather what you'll need for physical security a
 
 ---
 
-## Step 3: Create your master password
+## Step 3: Create your KeePass master password
 
-This is the only password you'll ever need to remember for this system, so it must be strong and memorable. Use **five to seven random words**.
+This is the password that locks your Vault. It must be strong and memorable. Use **five to seven random words**.
 
 **Option A: EFF Dice-Generated Passphrase (recommended)**
 
@@ -134,20 +134,25 @@ This method guarantees true randomness and uses a community-audited 7,776-word l
 
 For convenience, visit the [Password Generator](/password-generator) on this site. It uses the same EFF wordlist and your browser's cryptographically secure random number generator. Choose 5-7 words and your preferred separator, then click Generate.
 
+**Now write it down:**
+
+Get two sheets of paper (the ones that will go in your envelopes in Step 7). On both sheets, write:
+
+**"KeePass Vault master password:"** followed by the password you just created.
+
 **Do:**
-- **Go IMMEDIATELY to Step 7** (fill and seal the envelopes) and write it down there
 - Practise typing it a few times to memorize it
-- If you must write it down now, use a sheet that will become one of your envelope contents in Step 7
+- Keep both sheets safe until Step 7 (when you'll seal them)
 
 **Don't:**
 - Use names, birthdays, addresses, song lyrics or quotes
 - Use this password for anything else, ever
 - Save it in your email, phone notes or a document on your computer
-- Write it on scrap paper and carry it around
+- Write it on scrap paper - use the two envelope sheets
 
 > ⚠️ **There is no "forgot password" button.** If the master password is lost and both Envelopes are lost, the Vault can never be opened by anyone, including you. That's what makes it secure, and it's why Step 7 matters.
 
-> ⚠️ **IMPORTANT:** Complete Steps 3-7 in one sitting. Don't create a password and leave it written on paper while you do other steps.
+> ⚠️ **IMPORTANT:** Complete Steps 3-7 in one sitting. You're building up these sheets as you go, and they'll be sealed in Step 7. Don't leave them lying around between sessions.
 
 ---
 
@@ -178,11 +183,20 @@ Close KeePassXC and open it again to check the password works.
 
 This keeps an up-to-date copy of the Vault somewhere safe, so a house fire or a dead laptop doesn't lose everything.
 
-1. Go to [**proton.me/drive**](https://proton.me/drive) and create a free account. Use the five-word method for its password too, with **different words** from your master password.
+1. Go to [**proton.me/drive**](https://proton.me/drive) and create a free account. Use the five-word method for its password too, with **different words** from your KeePass master password.
 2. **Turn on two-step login.** In Proton go to **Settings → Account and password → Two-factor authentication**. Scan the code with your authenticator app.
-3. Proton will show you **backup codes**. Write them down. They go in the Envelopes.
-4. Proton will also offer a **recovery phrase** (a list of words). Write it down. It also goes in the Envelopes.
+3. Proton will show you **backup codes**. Write them down on both your envelope sheets.
+4. Proton will also offer a **recovery phrase** (a list of words). Write it down on both your envelope sheets.
 5. Install the **Proton Drive app** on your computer and sign in. A Proton Drive folder will appear, like any other folder, and anything put in it is copied safely online.
+
+**Add to your envelope sheets:**
+
+On both sheets (the ones you started in Step 3), add:
+
+- **"Proton email:"** followed by the email address you just created
+- **"Proton password:"** followed by the password you chose
+- **"Proton backup codes:"** followed by the backup codes from step 3 above
+- **"Proton recovery phrase:"** followed by the recovery phrase from step 4 above
 
 ---
 
@@ -196,18 +210,24 @@ This keeps an up-to-date copy of the Vault somewhere safe, so a house fire or a 
 
 ---
 
-## Step 7: Fill and seal the Envelopes
+## Step 7: Seal and store the Envelopes
 
-Now that you've created your master password (Step 3) and set up Proton (Step 5), you can fill the envelopes you prepared in Step 2.
+You now have two sheets of paper with your KeePass master password (Step 3) and Proton details (Step 5) on them. Time to seal and store them.
 
-**What to write (make two identical copies on two sheets of paper):**
+**Complete the sheets:**
 
-- [ ] The **Vault master password** (Step 3)
-- [ ] Your **Proton email address and password** (Step 5)
-- [ ] Your **Proton backup codes** (Step 5)
-- [ ] Your **Proton recovery phrase** (Step 5)
-- [ ] Your **phone passcode** (your authenticator app is on your phone)
+On both sheets, add:
+
+- [ ] Your **phone passcode** (your authenticator app is on your phone, so this is needed)
 - [ ] One line: *"The Vault is in Proton Drive in the Life Organiser folder. Download it and open it with KeePassXC from [keepassxc.org](https://keepassxc.org)."*
+
+**Check both sheets contain:**
+- KeePass Vault master password
+- Proton email and password
+- Proton backup codes
+- Proton recovery phrase
+- Phone passcode
+- Instructions line
 
 **Seal them securely:**
 
@@ -224,7 +244,7 @@ Now that you've created your master password (Step 3) and set up Proton (Step 5)
 - Tell your executor **where both envelopes are stored** (you'll write this in the Overview in Step 8)
 - If you store one with a trusted person, tell them: "Only open this if I die or become incapacitated, OR if the primary envelope is lost or destroyed"
 
-Now **destroy any scrap paper** with passwords on it, and check your computer's Recycle Bin/Bin is empty.
+Now **destroy any scrap paper** with passwords on it, and empty your computer's Recycle Bin/Trash.
 
 ---
 
