@@ -105,6 +105,65 @@ Before you create any passwords, gather what you'll need for physical security a
 
 **⚠️ Simpler option:** Use only one envelope instead of two. Risk: if that envelope is lost, destroyed, or the storage location becomes inaccessible, everything is permanently locked. No recovery is possible.
 
+---
+
+### Advanced: Split-knowledge system (higher security, more complexity)
+
+The standard approach above puts both Proton access AND the Vault master password in the same envelopes. This means anyone with an envelope has complete access to everything.
+
+**For higher security, you can separate the two levels of access:**
+
+**Level 1: Proton access (enough to get by)**
+- Gives access to the Overview: what exists, who to contact, scanned insurance policies
+- Executor can contact bank bereavement teams: "My father had an ISA with you, but I don't have the details"
+- Can see scanned documents but NOT passwords/PINs/account numbers
+- Lower risk if compromised
+
+**Level 2: Vault password (complete access)**
+- Just five words: the KeePass master password
+- Opens everything: passwords, PINs, account numbers, security codes
+- Makes executor's job much easier
+- Higher risk if compromised (though the password alone is useless without knowing about KeePass, Proton, etc.)
+
+**How to implement split-knowledge:**
+
+Instead of two identical envelopes, create:
+
+**Envelope A (Proton access) - two copies:**
+- Proton email and password
+- Proton backup codes and recovery phrase
+- Phone passcode
+- Instructions: *"Log in to Proton Drive. In the Life Organiser folder, open the Overview document for next steps. The Vault file is also there, but you'll need the Vault password from [person/location] to open it."*
+- Give to executor or highly trusted person (e.g., your daughter)
+
+**Envelope B (Vault password only) - two copies:**
+- Just the KeePass master password (five words)
+- Instructions: *"This password opens the Life Organiser Vault. The executor has the Vault file and will contact you if they need this password."*
+- Give to different trusted person (not the executor)
+
+**Envelope C (complete backup):**
+- Everything: Proton details AND Vault password
+- Store with solicitor or in safe deposit box
+- Emergency backup if A or B locations fail
+
+**Trade-offs:**
+
+✅ **More secure:**
+- Theft of Envelope A: thief gets overview but no passwords
+- Theft of Envelope B: thief has five random words with no context
+- Both must be compromised for complete access
+
+❌ **More complex:**
+- Requires coordinating 2-3 different people/locations
+- Executor needs to contact the Envelope B holder if they need full access
+- More potential points of failure
+
+**Who is this for?**
+- People with significant assets worth protecting
+- Complex family situations where you trust some people with some information
+- Anyone worried about the "all your eggs in one basket" risk
+- People who want executor to try the "contact bereavement teams" route first before having full password access
+
 **Questions to ask your solicitor (if using one):**
 - "How is my envelope stored? In a safe or filing cabinet?"
 - "Who has access to it?"
@@ -136,9 +195,11 @@ For convenience, visit the [Password Generator](/password-generator) on this sit
 
 **Now write it down:**
 
-Get two sheets of paper (the ones that will go in your envelopes in Step 7). On both sheets, write:
+Get two sheets of paper. On both sheets, write:
 
 **"KeePass Vault master password:"** followed by the password you just created.
+
+(If you're doing the split-knowledge approach from Step 2, these two sheets will become your complete backup envelopes in Step 7, and you'll create separate sheets for the split envelopes then.)
 
 **Do:**
 - Practise typing it a few times to memorize it
@@ -212,7 +273,13 @@ On both sheets (the ones you started in Step 3), add:
 
 ## Step 7: Seal and store the Envelopes
 
-You now have two sheets of paper with your KeePass master password (Step 3) and Proton details (Step 5) on them. Time to seal and store them.
+You now have two sheets of paper with your KeePass master password (Step 3) and Proton details (Step 5) on them. Time to complete them, seal them, and store them.
+
+Choose your approach based on what you decided in Step 2:
+
+---
+
+### Standard approach: Two identical envelopes (everything together)
 
 **Complete the sheets:**
 
@@ -239,10 +306,57 @@ On both sheets, add:
 - Take Envelope 1 to its primary storage location (solicitor/bank/safe)
 - Store Envelope 2 in the different backup location you chose
 
-**CRITICAL RULES:**
-- The two envelopes must be in **different physical locations**
-- Tell your executor **where both envelopes are stored** (you'll write this in the Overview in Step 8)
-- If you store one with a trusted person, tell them: "Only open this if I die or become incapacitated, OR if the primary envelope is lost or destroyed"
+**Tell your executor where both envelopes are** (you'll write this in the Overview in Step 8).
+
+---
+
+### Advanced: Split-knowledge system (Proton separate from Vault password)
+
+If you chose the split-knowledge approach in Step 2, you'll create different envelopes instead:
+
+**Envelope A (Proton access) - make TWO copies:**
+
+On two new sheets, write ONLY:
+- Proton email and password
+- Proton backup codes
+- Proton recovery phrase
+- Phone passcode
+- Instructions: *"Log in to Proton Drive at proton.me/drive. In the Life Organiser folder, open the Overview document for next steps. The Vault file is also there, but you'll need the Vault password from [name/location of Envelope B holder] to open it."*
+
+Seal both in tamper-evident bags. Write on the front: **"Proton Drive access - To be opened in case of my death or incapacity by [executor's name]"**
+
+Store one with your executor or highly trusted person. Store the second copy in a different location as backup.
+
+**Envelope B (Vault password only) - make TWO copies:**
+
+On two new sheets, write ONLY:
+- The KeePass Vault master password (the five words from Step 3)
+- Instructions: *"This password opens the Life Organiser Vault in KeePassXC. [Executor's name] has the Vault file and will contact you if they need this password. Only give this password to [executor's name] or their authorized representative."*
+
+Seal both in tamper-evident bags. Write on the front: **"Vault password - To be opened only if requested by [executor's name] or their authorized representative"**
+
+Give one to a different trusted person (NOT the executor). Store the second copy in a different secure location.
+
+**Envelope C (complete backup) - make ONE:**
+
+On the two original sheets you've been building up (with both KeePass password AND Proton details), add:
+- Phone passcode (if not already there)
+- Instructions: *"Complete access: This contains both Proton Drive access and the Vault password. Use if the separate envelopes are lost or inaccessible."*
+
+Seal in tamper-evident bag. Write on the front: **"Complete backup - All access details"**
+
+Store with your solicitor or in a bank safe deposit box.
+
+**Tell your executor:**
+- Where the Envelope A copies are (Proton access)
+- Who has Envelope B (Vault password) and their contact details
+- Where Envelope C is (complete backup, for emergencies)
+
+You'll write all this in the Overview in Step 8.
+
+---
+
+**Either approach:**
 
 Now **destroy any scrap paper** with passwords on it, and empty your computer's Recycle Bin/Trash.
 
@@ -299,7 +413,17 @@ If you share Proton access with someone now:
 - The Vault stays secure (they need the master password from an Envelope)
 - The golden rule is maintained (Vault password kept separate from the Vault)
 - They have enough information to get started (the printed Overview)
-- They know where **both** Envelopes are stored (write this clearly in the Overview)
+- They know where all Envelopes are stored (write this clearly in the Overview)
+
+**If you chose the split-knowledge approach:**
+
+Explain to your executor:
+- "You have access to Proton Drive [or: Envelope A is at [location]]. This gives you the Overview and all scanned documents."
+- "With that information, you can contact bank bereavement teams, insurance companies, etc. They'll ask for proof of death and ID, but they can look up accounts from my name and address."
+- "If you need full access to passwords and account numbers, [trusted person's name] has the Vault password. Their contact details: [phone/email]. Only ask for it if the bereavement team route doesn't work."
+- "In an emergency, there's a complete backup envelope at [solicitor/safe location] with everything."
+
+This gives your executor a clear escalation path: try the simple route first (Overview + bereavement teams), only get the Vault password if needed.
 
 ---
 
