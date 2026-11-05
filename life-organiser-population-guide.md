@@ -198,9 +198,9 @@ Make one entry for each account, device or service. Go group by group, and don't
 
 The Overview is written for someone who is upset and doesn't know where to start. Write it as if you're speaking to them. Use the headings from the Setup Guide and fill each one in.
 
-- **Read me first.** The first few things to do, in order. For example: *"1. Call [solicitor]. 2. The Envelope is at [place]. 3. Register the death, and ask the registrar about the Tell Us Once service."*
+- **Read me first.** The first few things to do, in order. For example: *"1. Call [solicitor]. 2. The Envelopes are at [location 1] and [location 2]. 3. Register the death, and ask the registrar about the Tell Us Once service."*
 - **Key people:** names and phone numbers for your executor, solicitor, accountant, GP, close family and anyone else to tell.
-- **Where things are:** where the original will is, where the Document Box is, where the Envelope is.
+- **Where things are:** where the original will is, where the Document Box is, where both Envelopes are (with specific addresses).
 - **Money:** list every bank, pension, investment and policy *by name only*, for example *"Nationwide: current account and ISA."* No numbers. They're in the Vault.
 - **Property, insurance and regular bills:** who supplies what, and which bills go out by direct debit. A simple table works best. The last two columns are optional, but they make the *Money MOT* much easier:
 
@@ -226,7 +226,7 @@ Get **one** fireproof and waterproof document box or bag (these are fairly cheap
 - Keep it in **one fixed place** at home, and tell your executor where.
 - Put the documents in clear plastic wallets, in the same order as the folders (Legal, Property, Insurance and so on).
 - On the inside of the lid, tape a list of what's inside.
-- **Never** put the Envelope from the Setup Guide in this box.
+- **Never** put either of the Envelopes from the Setup Guide in this box.
 
 ### Anything held elsewhere
 Some originals may be held by your solicitor (often the will) or your mortgage lender (sometimes the deeds). That's fine. Just write down **who holds each one** in the Overview under *Where things are*.
@@ -271,7 +271,7 @@ For each "yes": update the Vault, the Overview, the Drive folders and the Docume
 ### 4. Hand over (5 minutes)
 - ☐ Update the "Last updated" date in the Overview.
 - ☐ Print a fresh Overview for your executor, and ask them to shred the old one.
-- ☐ **Only if** you changed the master password, Proton password or phone passcode: write a new Envelope (Setup Guide, Step 6).
+- ☐ **Only if** you changed the master password, Proton password or phone passcode: write two new Envelopes (Setup Guide, Step 6).
 - ☐ Fill in the Review Log below.
 
 ---
@@ -284,7 +284,7 @@ For each "yes": update the Vault, the Overview, the Drive folders and the Docume
 
 Keep a record of each review. A printed copy of this table can live in the Document Box.
 
-| Date | Done by | What changed | Overview reprinted? | New Envelope? |
+| Date | Done by | What changed | Overview reprinted? | New Envelopes? |
 |---|---|---|---|---|
 | | | First round: everything set up | ☐ | ☐ |
 | | | | ☐ | ☐ |
